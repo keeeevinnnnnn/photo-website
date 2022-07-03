@@ -1,0 +1,69 @@
+nav{
+    background-color: rgb(155, 107, 155);
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 3rem;
+        li{
+            padding: 0.5rem 1rem;
+            a{
+                font-size: 1.5rem;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+
+.Search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input,button{
+        font-size: 2rem;
+        padding: 0.25rem;
+        border: 3px solid rgb(43, 0, 43);
+    }
+    button{
+        background-color: rgb(73, 1, 73);
+        color:  white;
+    }
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: rgb(206, 206, 206);
+}
+
+
+.pictures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .picture{
+        padding: 1rem;
+        width: 400px;
+        .imageContainer{
+            overflow: hidden;
+            height: 40vh;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all 0.3s ease;
+                &:hover{
+                    transform: scale(1.25);
+                }
+            }
+        }
+    }
+}
